@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información del Animal - Itzel Hdz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="animal-name">Animal</h1>
+    <p id="animal-info">Información sobre el animal...</p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const animal = params.get('animal');
+        const animalData = {
+            jaguar: {
+                name: "Jaguar",
+                info: "El jaguar es el felino más grande de América y el tercero más grande del mundo, después del tigre y el león. Es un depredador apex y desempeña un papel crucial en el mantenimiento de la salud y el equilibrio de su ecosistema."
+            },
+
+            tapir: {
+                name: "Tapir",
+                info: "El tapir es un mamífero herbívoro que pertenece a la familia Tapiridae. Es conocido por su apariencia única, que incluye un cuerpo robusto, una cabeza grande y una trompa corta y flexible. Existen cuatro especies de tapires: el tapir de tierras bajas (Tapirus terrestris), el tapir de Baird (Tapirus bairdii), el tapir malayo (Tapirus indicus), y el tapir de montaña (Tapirus pinchaque)."
+            },
+
+            tucan: {
+                name: "Tucan",
+                info: "El tucán es un ave tropical conocida por su distintivo pico grande y colorido. Existen más de 40 especies de tucanes, pero todas comparten características físicas y comportamentales similares."
+            },
+
+            iguana: {
+                name: "Iguana",
+                info: "La iguana de selva, más comúnmente conocida como iguana verde o Iguana iguana, es un gran lagarto arbóreo nativo de las áreas tropicales de América Central, América del Sur y el Caribe. Es una especie popular tanto en la naturaleza como en cautiverio debido a su apariencia distintiva y comportamiento interesante."
+            },
+
+            
+            boa: {
+                name: "Boa",
+                info: "Las boas constrictoras pueden alcanzar longitudes de hasta 4 metros, aunque la mayoría de los individuos son más pequeños, generalmente entre 2 y 3 metros. Pueden pesar entre 10 y 27 kilogramos. Son carnívoras y se alimentan de una variedad de presas, incluyendo mamíferos, aves y ocasionalmente otros reptiles. Las boas constrictoras matan a sus presas mediante constricción."
+            }
+        };
+
+        document.getElementById('animal-name').textContent = animalData[animal]?.name || "Animal";
+        document.getElementById('animal-info').textContent = animalData[animal]?.info || "Información no disponible.";
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: justify; /* Justificar el texto */
+}
+
+.selva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.banner {
+    background-color: #00FFFF; /* Azul agua */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner h1 {
+    color: white;
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #555; /* Color al pasar el mouse */
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center; /* Centrar subtítulos */
+}
+
+h2 {
+    color: #31ceda;
+    text-align: center; /* Centrar subtítulos */
+}
+
+h6 {
+    color: #000000;
+    text-align: center; /* Centrar subtítulos */
+}
+
+.animal {
+    margin: 20px 0;
+    text-align: center; /* Centrar contenido de la clase .animal */
+}
+
+.animal h3 {
+    text-align: center; /* Centrar subtítulos dentro de .animal */
+}
+
+.animal img {
+    max-width: 200px;
+}
+
+.comments-section {
+    margin-top: 40px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
